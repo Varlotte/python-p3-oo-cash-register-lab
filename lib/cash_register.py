@@ -19,7 +19,7 @@ class CashRegister:
     )
 
   def apply_discount(self):
-    if self.discount :
+    if (self.discount > 0) :
        self.total= int(self.total- ((self.discount/100) * self.total))
        print(f"After the discount, the total comes to ${self.total}.")
     else:
